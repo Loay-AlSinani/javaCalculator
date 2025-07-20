@@ -23,10 +23,40 @@ public class calculator {
 
             switch (choice) {
                 case 1:
+                    System.out.print("Enter first number: ");
+                    double num1 = scanner.nextDouble();
+                    System.out.print("Enter second number: ");
+                    double num2 = scanner.nextDouble();
+                    double sum = num1 + num2;
+                    System.out.println("Result: " + sum);
+                    break;
                 case 2:
+                    System.out.print("Enter first number: ");
+                    double subNum1 = scanner.nextDouble();
+                    System.out.print("Enter second number: ");
+                    double subNum2 = scanner.nextDouble();
+                    double result = subNum1 - subNum2;
+                    System.out.println("Result: " + result);
+                    break;
                 case 3:
+                    System.out.print("Enter first number: ");
+                    double mulNum1 = scanner.nextDouble();
+                    System.out.print("Enter second number: ");
+                    double mulNum2 = scanner.nextDouble();
+                    double product = mulNum1 * mulNum2;
+                    System.out.println("Result: " + product);
+                    break;
                 case 4:
-                    System.out.println("You selected option " + choice + ". Functionality coming soon.");
+                    System.out.print("Enter first number: ");
+                    double divNum1 = scanner.nextDouble();
+                    System.out.print("Enter second number: ");
+                    double divNum2 = scanner.nextDouble();
+                    if (divNum2 == 0) {
+                        System.out.println("Error: Cannot divide by zero.");
+                    } else {
+                        double quotient = divNum1 / divNum2;
+                        System.out.println("Result: " + quotient);
+                    }
                     break;
                 case 5:
                     System.out.println("Exiting program...");
