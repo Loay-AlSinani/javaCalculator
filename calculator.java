@@ -199,4 +199,5 @@ public class calculator {
         System.out.print("Enter number: ");
         return scanner.nextDouble();
     }
+
 }
